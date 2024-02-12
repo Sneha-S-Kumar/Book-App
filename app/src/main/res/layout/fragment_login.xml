@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LoginFragment"
+    android:tag="loginfragment"
+    android:id="@+id/loginf">
+
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintVertical_bias=".3"
+        app:layout_constraintHorizontal_bias=".5"
+        android:hint="Email"
+        android:paddingLeft="20dp"
+        android:background="@drawable/shapeedittext"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Password"
+        android:paddingLeft="20dp"
+        android:background="@drawable/shapeedittext"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintWidth_percent=".8" />
+
+    <Button
+        android:layout_width="0dp"
+        android:id="@+id/loginbutton"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintVertical_bias=".7"
+        android:text="Login"
+
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#316FF6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgot"
+        android:text="Forgot Password ?"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/newuser"
+        android:layout_height="wrap_content"
+        android:text="New User ?"
+        app:layout_constraintVertical_bias="0"
+        android:textSize="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintTop_toBottomOf="@+id/forgot"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:textSize="20dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:text="--------SignIn With--------"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintHorizontal_bias="0.628"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginbutton"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

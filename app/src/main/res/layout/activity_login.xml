@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:id="@+id/logactivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:id="@+id/loginback"
+        android:src="@drawable/fb"
+        android:scaleType="centerCrop"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/constraintLayout2"
+        app:layout_constraintHeight_percent=".78"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/toshape">
+
+        <FrameLayout
+            android:id="@+id/viewpagerlogin"
+            android:layout_width="411dp"
+            android:layout_height="500dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tablayoutlogin"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+<ImageButton
+        android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:id="@+id/googlebutton"
+            android:src="@drawable/ggggg"
+           android:elevation="35dp"
+    android:scaleType="fitXY"
+android:background="@drawable/shapeimagebutton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewpagerlogin"/>
+
+<ImageButton
+    android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:id="@+id/fbbutton"
+            app:layout_constraintHorizontal_bias="0.2"
+            android:src="@drawable/fb"
+            android:elevation="35dp"
+    android:background="@drawable/shapeimagebutton"
+android:scaleType="fitXY"
+    app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewpagerlogin"/>
+
+<ImageButton
+    android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_constraintHorizontal_bias="0.8"
+            android:id="@+id/twitbutton"
+    android:background="@drawable/shapeimagebutton"
+android:scaleType="fitXY"
+    android:src="@drawable/twit"
+            android:elevation="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewpagerlogin"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<ImageView
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:id="@+id/applogo"
+    android:src="@drawable/logoforapp"
+    app:layout_constraintVertical_bias=".3"
+    app:layout_constraintBottom_toTopOf="@id/constraintLayout2"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/loginback"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Word Wander"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        app:layout_constraintVertical_bias=".2"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/applogo"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

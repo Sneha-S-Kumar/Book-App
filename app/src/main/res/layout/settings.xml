@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:background="@drawable/gradient"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+
+        android:layout_height="450dp"
+
+        android:layout_marginLeft="50dp"
+
+        app:cardCornerRadius="20dp"
+
+        android:layout_marginRight="50dp"
+
+        android:layout_marginTop="130dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:foregroundGravity="center"
+
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+
+            android:id="@+id/layout1"
+
+            android:layout_height="match_parent">
+
+            <ImageView
+
+                android:layout_width="match_parent"
+
+                android:layout_height="250dp"
+
+                android:src="@drawable/logoforapp"
+
+                android:id="@+id/image"
+
+                tools:layout_editor_absoluteX="-16dp"
+
+                tools:layout_editor_absoluteY="16dp" />
+
+            <TextView
+
+                android:id="@+id/logout"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="80dp"
+
+                android:foregroundGravity="center"
+
+                android:gravity="center"
+
+                android:textSize="25dp"
+
+                android:text="Logout"
+
+                app:layout_constraintTop_toBottomOf="@id/image"
+
+                android:textStyle="bold"
+
+                tools:layout_editor_absoluteX="16dp"
+
+                tools:layout_editor_absoluteY="154dp" />
+
+            <TextView
+
+                android:id="@+id/delete"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="80dp"
+
+                android:foregroundGravity="center"
+
+                android:gravity="center"
+
+                android:textSize="25dp"
+
+                android:text="Delete Account"
+
+                app:layout_constraintTop_toBottomOf="@id/logout"
+
+                android:textStyle="bold"
+
+                tools:layout_editor_absoluteX="16dp"
+
+                tools:layout_editor_absoluteY="154dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
